@@ -264,8 +264,8 @@ export default function StudentProfilePage() {
           <Tabs defaultValue="personal">
             <TabsList className="grid w-full grid-cols-4">
               <TabsTrigger value="personal">Personal</TabsTrigger>
-              <TabsTrigger value="achievements">Achievements</TabsTrigger>
-              <TabsTrigger value="events">Event History</TabsTrigger>
+              {/* <TabsTrigger value="achievements">Achievements</TabsTrigger>
+              <TabsTrigger value="events">Event History</TabsTrigger> */}
               <TabsTrigger value="settings">Settings</TabsTrigger>
             </TabsList>
 
