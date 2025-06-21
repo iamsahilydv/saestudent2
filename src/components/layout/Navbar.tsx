@@ -105,7 +105,7 @@ export default function Navbar() {
           <nav className="hidden md:flex items-center gap-6">
             <NavLink href="/dashboard">Dashboard</NavLink>
             <NavLink href="/dashboard/student">Student Dashboard</NavLink>
-            <NavLink href="/dashboard/events">My Events</NavLink>
+            <NavLink href="/dashboard/events">All Events</NavLink>
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
                 Resources
