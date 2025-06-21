@@ -19,7 +19,7 @@ import {
   Settings,
   HelpCircle,
   MessageSquare,
-  ArrowRight
+  ArrowRight,
 } from "lucide-react";
 
 interface SidebarNavProps {
@@ -44,15 +44,15 @@ export default function Sidebar({ className }: SidebarNavProps) {
       badge: "New",
     },
     {
-      title: "My Events",
+      title: "All Events",
       href: "/dashboard/events",
       icon: <CalendarDays className="mr-2 h-4 w-4" />,
       variant: "default",
       badge: 2, // Number of active events
     },
     {
-      title: "Competitions",
-      href: "/dashboard/competitions",
+      title: "Awareness Sessions",
+      href: "/dashboard/awareness-sessions",
       icon: <Award className="mr-2 h-4 w-4" />,
       variant: "default",
     },
@@ -62,6 +62,13 @@ export default function Sidebar({ className }: SidebarNavProps) {
       icon: <Lightbulb className="mr-2 h-4 w-4" />,
       variant: "default",
       badge: "New", // New workshops available
+    },
+    {
+      title: "Opportunities",
+      href: "/dashboard/opportunities",
+      icon: <Lightbulb className="mr-2 h-4 w-4" />,
+      variant: "default",
+      badge: "New", // New opportunities available
     },
     {
       title: "Learning Resources",

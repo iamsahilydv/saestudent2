@@ -6,7 +6,11 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import EventRegistration from "@/components/student/EventRegistration";
 
-export default function EventRegistrationPage({ params }: { params: { id: string } }) {
+export default function EventRegistrationPage({
+  params,
+}: {
+  params: { id: string };
+}) {
   // Mock event data - in a real app, fetch this based on the ID
   const event = {
     id: parseInt(params.id),
@@ -17,14 +21,21 @@ export default function EventRegistrationPage({ params }: { params: { id: string
     location: "Bengaluru, India",
     registrationFee: 1500,
     registrationDeadline: "April 25, 2025",
-    description: "Join industry experts and academic researchers for a day of discussions on the latest electric vehicle technologies and sustainable mobility solutions. This symposium brings together leading professionals from the automotive sector, researchers, and students to explore innovations in electric vehicle design, battery technology, charging infrastructure, and policy frameworks.",
+    description:
+      "Join industry experts and academic researchers for a day of discussions on the latest electric vehicle technologies and sustainable mobility solutions. This symposium brings together leading professionals from the automotive sector, researchers, and students to explore innovations in electric vehicle design, battery technology, charging infrastructure, and policy frameworks.",
     requirements: [
       "Valid SAE Membership ID",
       "College/University ID",
       "Basic understanding of automotive engineering concepts",
-      "Registration fee payment"
+      "Registration fee payment",
     ],
-    tags: ["Electric Vehicles", "Symposium", "Sustainable Mobility", "Networking", "Industry Experts"]
+    tags: [
+      "Electric Vehicles",
+      "Symposium",
+      "Sustainable Mobility",
+      "Networking",
+      "Industry Experts",
+    ],
   };
 
   return (
@@ -35,7 +46,9 @@ export default function EventRegistrationPage({ params }: { params: { id: string
             <ArrowLeft className="h-4 w-4" />
           </Link>
         </Button>
-        <h2 className="text-2xl font-bold tracking-tight">Event Registration</h2>
+        <h2 className="text-2xl font-bold tracking-tight">
+          Event Registration
+        </h2>
       </div>
 
       <EventRegistration event={event} />
